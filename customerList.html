@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0" />
+        <title>Customer List</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h2>GlobusLabs</h2>
+            <img src="generic-user-icon-9.jpg" alt="">
+        </header>
+        <h2>All Customers</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>customer code</th>
+                    <th>customer name</th>
+                    <th>email</th>
+                    <th>Phone number</th>
+                    <th>contact person</th>
+                    <th>edit</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody id="customer-details">
+            </tbody>
+        </table>
+
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Edit Customer Details</h1><hr>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  onclick="location.reload()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form id="editingForm">
+                        <div class="row pt-2 pb-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="customerCode" name="customerCode" placeholder="Customer Code*">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="customerName" name="customerName" placeholder="Customer Name*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="address" name="address" placeholder="Address*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="city" name="city" placeholder="City*">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="pin" name="pin" placeholder="pin*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="phone1" name="phone1" placeholder="Phone Number 1*">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="phone2" name="phone2" placeholder="Phone Number 2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email*">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="website" name="website" placeholder="Website">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="contactPerson" name="contactPerson" placeholder="Contact Person*">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="btn d-flex justify-content-between">
+                            <button type="button" class="btn btn-primary"><a href="/customerList.html">View Customers</a></button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div> -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.reload()">Cancel</button>
+                  <button type="submit" class="btn btn-primary" >Save</button>
+                </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="script2.js"></script>
+    </body>
+</html>

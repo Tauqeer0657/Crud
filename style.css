@@ -1,0 +1,33 @@
+header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 2%;
+    background-color: rgb(61, 152, 179);
+}
+header h2{
+    color: rgb(237, 56, 51);
+}
+header img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.btn-primary{
+    background-color: rgb(38, 106, 141);
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h2{
+    margin: 20px 0;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    height: 60px;
+}
